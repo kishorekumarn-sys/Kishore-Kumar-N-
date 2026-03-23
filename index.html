@@ -5,17 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kishore Kumar | Portfolio</title>
 
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
 body {
     margin: 0;
     font-family: "Times New Roman", Times, serif;
-    background: #f4f6f9;
+    background: #f3f6f8;
     color: #333;
 }
 
 /* Navbar */
 nav {
-    background: #1e293b;
+    background: #0a66c2;
     padding: 15px;
     text-align: center;
 }
@@ -24,20 +27,25 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 nav a:hover {
-    color: #38bdf8;
+    color: #dbeafe;
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #3b82f6, #06b6d4);
+    padding: 70px 20px;
+    background: linear-gradient(to right, #0a66c2, #0073b1);
     color: white;
 }
 header h1 {
-    font-size: 40px;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 18px;
 }
 
 /* Sections */
@@ -50,27 +58,59 @@ section {
 /* Cards */
 .card {
     background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Section headings */
+h2 {
+    border-left: 5px solid #0a66c2;
+    padding-left: 10px;
 }
 
 /* Skills */
 .skills li {
     display: inline-block;
-    background: #3b82f6;
+    background: #0a66c2;
     color: white;
-    padding: 8px 12px;
+    padding: 8px 14px;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.skills li:hover {
+    background: #004182;
+}
+
+/* Education layout */
+.edu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.edu-item img {
+    border-radius: 8px;
+}
+
+/* Contact icons */
+.contact p i {
+    color: #0a66c2;
+    margin-right: 10px;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #1e293b;
+    background: #0a66c2;
     color: white;
 }
 </style>
@@ -121,14 +161,14 @@ I aim to use my analytical skills and technology to solve real-world business pr
 <div class="card">
 <h2>Projects</h2>
 
-<h3>Project 01</h3>
-<p>Title of the project.</p>
+<h3>Working Capital Analysis</h3>
+<p>Analyzed liquidity, solvency, and financial efficiency of a business.</p>
 
-<h3>Project 02</h3>
-<p>Title of the project.</p>
+<h3>Sales Data Analysis</h3>
+<p>Identified trends and improved business decision-making.</p>
 
-<h3>Project 03</h3>
-<p>Title of the project.</p>
+<h3>Customer Segmentation</h3>
+<p>Segmented customers based on behavior and preferences.</p>
 
 </div>
 </section>
@@ -138,39 +178,39 @@ I aim to use my analytical skills and technology to solve real-world business pr
 <div class="card">
 <h2>Education</h2>
 
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:20px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/University_logo_placeholder.png" width="50">
+<div class="edu-item">
+<img src="images/gims.jpg" width="50">
 <div>
 <h3>MBA – Business Analytics</h3>
-<p>Global Institute of Management Sciences, Bangalore (2024 – 2026)</p>
+<p>Global Institute of Management Sciences (2024 – 2026)</p>
 <p>CGPA: 7.5/10</p>
 </div>
 </div>
 
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:20px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/University_logo_placeholder.png" width="50">
+<div class="edu-item">
+<img src="images/pes.png" width="50">
 <div>
 <h3>Bachelor of Commerce (B.Com)</h3>
-<p>PES University, Bangalore (2021 – 2024)</p>
+<p>PES University (2021 – 2024)</p>
 <p>CGPA: 7.3/10</p>
 </div>
 </div>
 
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:20px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/University_logo_placeholder.png" width="50">
+<div class="edu-item">
+<img src="images/capuc.jpg" width="50">
 <div>
 <h3>II PUC</h3>
 <p>Christ Academy PU College (2019 – 2021)</p>
-<p>Aggregate: 83.66%</p>
+<p>83.66%</p>
 </div>
 </div>
 
-<div style="display:flex; align-items:center; gap:15px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/University_logo_placeholder.png" width="50">
+<div class="edu-item">
+<img src="images/vsis.jpg" width="50">
 <div>
 <h3>Class X</h3>
 <p>Vidya Samskruthi International School (2018 – 2019)</p>
-<p>Aggregate: 86.72%</p>
+<p>86.72%</p>
 </div>
 </div>
 
@@ -179,17 +219,19 @@ I aim to use my analytical skills and technology to solve real-world business pr
 
 <!-- Contact -->
 <section id="contact">
-<div class="card">
+<div class="card contact">
 <h2>Contact</h2>
-<p>Email: kishorekumarnaidu0002@gmail.com</p>
-<p>Mobile: 8778287341 </p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/kishorekumarn0002/" target="_blank">Kishore Kumar N</a></p>
+<p><i class="fas fa-envelope"></i> kishorekumarnaidu0002@gmail.com</p>
+<p><i class="fas fa-phone"></i> 8778287341</p>
+<p><i class="fab fa-linkedin"></i> 
+<a href="https://www.linkedin.com/in/kishorekumarn0002/" target="_blank">Kishore Kumar N</a>
+</p>
 </div>
 </section>
 
 <!-- Footer -->
 <footer>
-<p>© 2026 Kishore Kumar N </p>
+<p>© 2026 Kishore Kumar N</p>
 </footer>
 
 </body>
