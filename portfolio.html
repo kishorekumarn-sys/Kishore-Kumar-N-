@@ -5,10 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kishore Kumar | Portfolio</title>
 
-<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Times New Roman", Times, serif;
@@ -19,15 +24,14 @@ body {
 /* Navbar */
 nav {
     background: #0a66c2;
-    padding: 15px;
+    padding: 12px;
     text-align: center;
 }
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 12px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
 }
 nav a:hover {
     color: #dbeafe;
@@ -36,19 +40,19 @@ nav a:hover {
 /* Header */
 header {
     text-align: center;
-    padding: 70px 20px;
-    background: linear-gradient(to right, #0a66c2, #0073b1);
+    padding: 60px 20px;
+    background: linear-gradient(to right, #0a66c2, #004182);
     color: white;
 }
 header h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 38px;
+    letter-spacing: 1px;
 }
 header p {
-    font-size: 18px;
+    font-size: 17px;
 }
 
-/* Profile Image */
+/* Profile */
 .profile-img {
     width: 120px;
     height: 120px;
@@ -57,65 +61,57 @@ header p {
     border: 4px solid white;
 }
 
-/* 🔥 Premium Resume Buttons */
+/* Premium Resume Buttons */
 .resume-container {
     margin-top: 20px;
 }
 
 .resume-btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 22px;
-    background: white;
-    color: #0a66c2;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* Hover Glow Effect */
-.resume-btn:hover {
-    background: #0a66c2;
+    background: linear-gradient(135deg, #0a66c2, #004182);
     color: white;
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 0 15px rgba(10,102,194,0.6);
+    border-radius: 30px;
+    padding: 12px 22px;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-/* Icon animation */
+.resume-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(10,102,194,0.5);
+}
+
 .resume-btn i {
     margin-right: 8px;
-    transition: 0.3s;
-}
-.resume-btn:hover i {
-    transform: scale(1.2);
 }
 
-/* Sections */
+/* Sections (fixed spacing) */
 section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
+    padding: 25px 15px;
+    max-width: 850px;
+    margin: 20px auto;
 }
 
-/* Cards */
+/* Cards (original look) */
 .card {
     background: white;
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 4px solid #0a66c2;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
+
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
+    border-left: 4px solid #004182;
 }
 
-/* Section headings */
+/* Headings */
 h2 {
-    border-left: 5px solid #0a66c2;
-    padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 /* Skills */
@@ -123,46 +119,47 @@ h2 {
     display: inline-block;
     background: #0a66c2;
     color: white;
-    padding: 8px 14px;
-    margin: 5px;
-    border-radius: 20px;
-    font-size: 14px;
-    transition: 0.3s;
+    padding: 7px 12px;
+    margin: 4px;
+    border-radius: 15px;
+    font-size: 13px;
 }
+
 .skills li:hover {
     background: #004182;
 }
 
-/* Education layout */
+/* Education */
 .edu-item {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-.edu-item img {
-    border-radius: 8px;
+    gap: 12px;
+    margin-bottom: 15px;
 }
 
-/* Contact icons */
-.contact p i {
+.edu-item img {
+    border-radius: 6px;
+}
+
+/* Contact */
+.contact i {
     color: #0a66c2;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background: #0a66c2;
     color: white;
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
@@ -171,31 +168,24 @@ footer {
 <a href="#contact">Contact</a>
 </nav>
 
-<!-- Header -->
 <header>
-
 <h1>Kishore Kumar N</h1>
 <p>Business Analytics Student | Data Analysis & Visualization Enthusiast</p>
 
-<!-- Profile Photo -->
 <img src="images/profile.jpeg" class="profile-img">
 
-<!-- 🔥 Premium Resume Buttons -->
 <div class="resume-container">
-
-<a href="resume.pdf" target="_blank" class="resume-btn">
-    <i class="fas fa-eye"></i> View Resume
+<a href="./resume.pdf" target="_blank" class="resume-btn">
+<i class="fas fa-eye"></i> View Resume
 </a>
 
-<a href="resume.pdf" download class="resume-btn">
-    <i class="fas fa-download"></i> Download Resume
+<a href="./resume.pdf" download class="resume-btn">
+<i class="fas fa-download"></i> Download Resume
 </a>
-
 </div>
 
 </header>
 
-<!-- About -->
 <section id="about">
 <div class="card">
 <h2>About Me</h2>
@@ -206,7 +196,6 @@ I aim to use my analytical skills and technology to solve real-world business pr
 </div>
 </section>
 
-<!-- Skills -->
 <section id="skills">
 <div class="card">
 <h2>Skills</h2>
@@ -218,24 +207,22 @@ I aim to use my analytical skills and technology to solve real-world business pr
 </div>
 </section>
 
-<!-- Projects -->
 <section id="projects">
 <div class="card">
 <h2>Projects</h2>
 
 <h3>Working Capital Analysis</h3>
-<p>Analyzed liquidity, solvency, and financial efficiency of a business.</p>
+<p>Analyzed liquidity, solvency, and financial efficiency.</p>
 
 <h3>Sales Data Analysis</h3>
-<p>Identified trends and improved business decision-making.</p>
+<p>Identified trends to improve business decisions.</p>
 
 <h3>Customer Segmentation</h3>
-<p>Segmented customers based on behavior and preferences.</p>
+<p>Segmented customers using behavioral data.</p>
 
 </div>
 </section>
 
-<!-- Education -->
 <section id="education">
 <div class="card">
 <h2>Education</h2>
@@ -244,26 +231,23 @@ I aim to use my analytical skills and technology to solve real-world business pr
 <img src="images/gims.jpg" width="75">
 <div>
 <h3>MBA – Business Analytics</h3>
-<p>Global Institute of Management Sciences (2024 – 2026)</p>
-<p>CGPA: 7.5/10</p>
+<p>GIMS (2024 – 2026) | CGPA: 7.5</p>
 </div>
 </div>
 
 <div class="edu-item">
 <img src="images/pes.png" width="75">
 <div>
-<h3>Bachelor of Commerce (B.Com)</h3>
-<p>PES University (2021 – 2024)</p>
-<p>CGPA: 7.3/10</p>
+<h3>B.Com</h3>
+<p>PES University | CGPA: 7.3</p>
 </div>
 </div>
 
 <div class="edu-item">
 <img src="images/capuc.jpg" width="75">
 <div>
-<h3>II PUC</h3>
-<p>Christ Academy PU College (2019 – 2021)</p>
-<p>83.66%</p>
+<h3>PUC</h3>
+<p>Christ Academy | 83.66%</p>
 </div>
 </div>
 
@@ -271,27 +255,24 @@ I aim to use my analytical skills and technology to solve real-world business pr
 <img src="images/vsis.jpg" width="75">
 <div>
 <h3>Class X</h3>
-<p>Vidya Samskruthi International School (2018 – 2019)</p>
-<p>86.72%</p>
+<p>VSIS | 86.72%</p>
 </div>
 </div>
 
 </div>
 </section>
 
-<!-- Contact -->
 <section id="contact">
 <div class="card contact">
 <h2>Contact</h2>
 <p><i class="fas fa-envelope"></i> kishorekumarnaidu0002@gmail.com</p>
 <p><i class="fas fa-phone"></i> 8778287341</p>
 <p><i class="fab fa-linkedin"></i> 
-<a href="https://www.linkedin.com/in/kishorekumarn0002/" target="_blank">Kishore Kumar N</a>
+<a href="https://www.linkedin.com/in/kishorekumarn0002/" target="_blank">LinkedIn Profile</a>
 </p>
 </div>
 </section>
 
-<!-- Footer -->
 <footer>
 <p>© 2026 Kishore Kumar N</p>
 </footer>
